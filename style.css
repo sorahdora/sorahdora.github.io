@@ -120,9 +120,40 @@ section p {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Make screenshot rows stack on smaller screens */
+/* Developer profile layout */
+.developer-profile {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Left side developer photo */
+.developer-image {
+  flex: 1;
+}
+
+.developer-image img {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Right side developer introduction */
+.developer-info {
+  flex: 2;
+}
+
+.developer-info h3 {
+  margin-top: 0;
+  color: rgb(51, 51, 51);
+  font-size: 24px;
+}
+
+/* Make layouts stack on smaller screens */
 @media (max-width: 700px) {
-  .screenshot-row {
+  .screenshot-row,
+  .developer-profile {
     flex-direction: column;
     align-items: flex-start;
   }
