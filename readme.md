@@ -8,7 +8,7 @@
 
 ---
 
-<h2 id="description" style="color:#4d6653;">Description</h2>
+<h2 id="description" style="color : lightskyblue">Description</h2>
 
 This game is a puzzle platformer where players explore different stages, solve challenges, and switch between 2D and 3D perspectives to progress through the world.
 
