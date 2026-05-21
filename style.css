@@ -21,7 +21,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("screenshot.png");
+  background-image: url("screenshot.png"); /*TODO*/
   background-size: cover;
   background-position: center;
   opacity: 0.4;
