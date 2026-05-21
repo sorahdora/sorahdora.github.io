@@ -1,32 +1,69 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
-  text-align: center;
   margin: 0;
-  padding: 50px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
 }
 
-h1 {
-  color: #2f80ed;
-  font-size: 40px;
+/* Header box */
+header {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
 }
 
-p {
+header h1 {
+  margin: 0;
+  font-size: 42px;
+}
+
+/* Navigation bar */
+nav {
+  background-color: #333;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Navigation links */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 18px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+/* Mouse hover effect */
+nav a:hover {
+  background-color: white;
+  color: #333;
+}
+
+/* Main content box */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Each section */
+section {
+  background-color: white;
+  margin-bottom: 30px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+section p {
   font-size: 18px;
   line-height: 1.6;
-}
-
-button {
-  background-color: #2f80ed;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #1c5fb8;
 }
