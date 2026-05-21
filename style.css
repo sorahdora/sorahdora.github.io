@@ -78,7 +78,7 @@ section {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Section titles: Description, Demo, Screenshots, etc. */
+/* Section titles */
 section h2 {
   margin-top: 0;
   color: #4d6653;
@@ -120,32 +120,51 @@ section p {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* More Info box */
-.info-box {
-  background-color: rgb(230, 230, 230);
-  padding: 22px;
-  border-radius: 4px;
-  max-width: 600px;
-}
-
-/* Each information line */
-.info-row {
+/* Info and Download combined box */
+.info-download-box {
   display: flex;
-  margin-bottom: 12px;
+  gap: 30px;
+  background-color: rgb(230, 230, 230);
+  padding: 25px;
+  border-radius: 8px;
 }
 
-/* Left label: Status, Category, Author */
-.info-label {
-  width: 120px;
+/* Left side: More Info */
+.more-info-column {
+  flex: 1;
+}
+
+/* Right side: Download */
+.download-column {
+  flex: 1;
+}
+
+.more-info-column h3,
+.download-column h3 {
+  margin-top: 0;
+  color: rgb(51, 51, 51);
+}
+
+.more-info-column p,
+.download-column p {
+  font-size: 17px;
+  margin: 10px 0;
+}
+
+/* Download button */
+.download-button {
+  display: inline-block;
+  margin-top: 12px;
+  background-color: #4d6653;
+  color: white;
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 8px;
   font-weight: bold;
-  color: rgb(70, 70, 70);
-  text-align: right;
-  margin-right: 18px;
 }
 
-/* Right value */
-.info-value {
-  color: rgb(0, 0, 0);
+.download-button:hover {
+  background-color: rgb(51, 51, 51);
 }
 
 /* Developer profile layout */
@@ -181,20 +200,10 @@ section p {
 /* Make layouts stack on smaller screens */
 @media (max-width: 700px) {
   .screenshot-row,
-  .developer-profile {
+  .developer-profile,
+  .info-download-box {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  .info-row {
-    flex-direction: column;
-  }
-
-  .info-label {
-    width: auto;
-    text-align: left;
-    margin-right: 0;
-    margin-bottom: 4px;
   }
 
   nav a {
