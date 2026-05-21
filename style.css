@@ -21,7 +21,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("screenshot.png"); /*TODO*/
+  background-image: url("restaurant-header.png"); /* TODO: Upload main Restaurant Tycoon screenshot or logo later */
   background-size: cover;
   background-position: center;
   opacity: 0.4;
@@ -88,4 +88,51 @@ section h2 {
 section p {
   font-size: 18px;
   line-height: 1.6;
+}
+
+/* Screenshot layout */
+.screenshot-row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 35px;
+}
+
+/* Left side text */
+.screenshot-text {
+  flex: 1;
+}
+
+/* Screenshot subtitles */
+.screenshot-text h3 {
+  color: rgb(51, 51, 51);
+  margin-bottom: 10px;
+}
+
+/* Right side image */
+.screenshot-image {
+  flex: 1;
+}
+
+.screenshot-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Make screenshot rows stack on smaller screens */
+@media (max-width: 700px) {
+  .screenshot-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 6px;
+  }
+
+  .game-header h1 {
+    font-size: 36px;
+  }
 }
