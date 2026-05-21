@@ -1,29 +1,48 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #76857a;
+  background-color: rgb(244, 244, 244);
+  color: rgb(51, 51, 51);
 }
 
-/* Header box */
-header {
-  background-color: #222;
+/* Header box with background screenshot */
+.game-header {
+  position: relative;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgb(34, 34, 34);
+}
+
+/* Background image layer */
+.game-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("screenshot.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+/* Game title text */
+.game-header h1 {
+  position: relative;
+  z-index: 1;
   color: white;
+  font-size: 48px;
   text-align: center;
-  padding: 40px 20px;
-}
-
-header h1 {
   margin: 0;
-  font-size: 42px;
 }
 
 /* Navigation bar */
 nav {
-  background-color: #333;
+  background-color: rgb(51, 51, 51);
   text-align: center;
   padding: 15px;
-  
 }
 
 /* Navigation links */
@@ -40,18 +59,17 @@ nav a {
 /* Mouse hover effect */
 nav a:hover {
   background-color: white;
-  color: #333;
-  text-decoration: none;
+  color: rgb(51, 51, 51);
 }
 
-/* Main content box */
+/* Main content area */
 main {
   max-width: 900px;
   margin: 40px auto;
   padding: 0 20px;
 }
 
-/* Each section */
+/* Each section box */
 section {
   background-color: white;
   margin-bottom: 30px;
@@ -60,11 +78,13 @@ section {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Section titles: Description, Demo, Screenshots, etc. */
 section h2 {
   margin-top: 0;
-  color: #4d6653
+  color: #4d6653;
 }
 
+/* Paragraph text */
 section p {
   font-size: 18px;
   line-height: 1.6;
