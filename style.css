@@ -41,6 +41,7 @@ nav a {
 nav a:hover {
   background-color: white;
   color: #333;
+  text-decoration: none;
 }
 
 /* Main content box */
