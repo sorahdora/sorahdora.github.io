@@ -127,6 +127,7 @@ section p {
   background-color: rgb(230, 230, 230);
   padding: 25px;
   border-radius: 8px;
+  align-items: flex-start;
 }
 
 /* Left side: More Info */
@@ -151,20 +152,44 @@ section p {
   margin: 10px 0;
 }
 
-/* Download button */
-.download-button {
-  display: inline-block;
-  margin-top: 12px;
+/* Download clickable box */
+.download-card {
+  display: block;
   background-color: #4d6653;
   color: white;
   text-decoration: none;
-  padding: 12px 18px;
-  border-radius: 8px;
-  font-weight: bold;
+  padding: 22px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-.download-button:hover {
+/* Download box hover effect */
+.download-card:hover {
   background-color: rgb(51, 51, 51);
+  transform: translateY(-2px);
+}
+
+/* Big text inside download box */
+.download-title {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* Small text inside download box */
+.download-text {
+  display: block;
+  font-size: 16px;
+}
+
+/* Text under download box */
+.download-note {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 12px;
+  color: rgb(51, 51, 51);
 }
 
 /* Developer profile layout */
